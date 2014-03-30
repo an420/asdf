@@ -2,7 +2,7 @@
 
 GET INVOLVED
 ===================
- - Website     - http://Frankos.org
+ - Website     - http://asdf.org
  - Mailinglist - http://eepurl.com/yL05L
  - Freenode    - http://webchat.freenode.net/?channels=#Franko
 

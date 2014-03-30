@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2012 franko Developers
+// Copyright (c) 2011-2012 asdf Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -294,14 +294,14 @@ void ThreadIRCSeed2(void* parg)
         }
         
         if (fTestNet) {
-            Send(hSocket, "JOIN #frankoORGTEST3\r");
-            Send(hSocket, "WHO #frankoORGTEST3\r");
+            Send(hSocket, "JOIN #asdfORGTEST3\r");
+            Send(hSocket, "WHO #asdfORGTEST3\r");
         } else {
-            // randomly join #frankoORG00-#frankoORG99
+            // randomly join #asdfORG00-#asdfORG99
             int channel_number = GetRandInt(100);
-            channel_number = 0; // franko: for now, just use one channel
-            Send(hSocket, strprintf("JOIN #frankoORG%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #frankoORG%02d\r", channel_number).c_str());
+            channel_number = 0; // asdf: for now, just use one channel
+            Send(hSocket, strprintf("JOIN #asdfORG%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #asdfORG%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();
